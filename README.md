@@ -41,14 +41,6 @@ landing-page-project/
 |-- README.md          # Project documentation
 ```
 
-## Screenshots
-
-### Light Mode:
-![Light Mode](Landing_Page/screenshots/dark-mode.PNG)
-
-### Dark Mode:
-![Dark Mode](/screenshots/dark-mode.png)
-
 ## Usage
 
 - Open the landing page in your browser.
