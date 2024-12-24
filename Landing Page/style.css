@@ -1,0 +1,335 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Hero Section Styling */
+.p1 {
+    background-image: url('p4.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.p1 h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.p1 p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* About Us Section Styling */
+.about-section {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-left {
+    flex: 1;
+}
+
+.about-left img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-right {
+    flex: 1;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.about-right h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #007BFF;
+    text-align: center;
+}
+
+.about-right p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.course-container {
+    display: flex; /* Display cards in a horizontal row */
+    flex-wrap: wrap; /* Allow wrapping to next line if space is not enough */
+    gap: 20px; /* Add space between cards */
+    justify-content: center; /* Center the cards in the container */
+}
+
+.courses-section h2{
+        text-align: center; /* Center the text */
+        font-weight: 700;   /* Make it bold */
+        margin-bottom: 20px; /* Add some spacing below */
+        font-size: 2rem;    /* Optional: Adjust the size for better visibility */
+}
+.course-card {
+    background-color: white;
+    width: 350px; /* Set card width */
+    margin: 10px; /* Small margin around each card */
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.course-card h3 {
+    font-size: 20px;
+    margin-top: 15px;
+    color: rebeccapurple;
+}
+
+.course-card .price {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.course-card button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Q&A Section Styling */
+.qa-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.qa-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f4f7fa;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.qa-section form input,
+.qa-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.qa-section form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav .nav-links {
+        flex-direction: column;
+    }
+
+    .p1 h1 {
+        font-size: 2rem;
+    }
+
+    .p1 p {
+        font-size: 1rem;
+    }
+
+    .about-content {
+        font-size: 16px;
+    }
+}
+
+.modal-container {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s;
+    text-align: center;
+}
+
+.modal-header h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #007BFF;
+}
+
+.modal-body p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.modal-body .form-group label {
+    display: block;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.modal-body .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.modal-body .btn-primary {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;  /* Dark background */
+    color: #fff;  /* White text for better visibility */
+}
+
+.dark-mode header {
+    background-color: #1a1a1a;  /* Dark header background */
+}
+
+.dark-mode .p1 {
+    background-color: #1a1a1a;  /* Dark hero background */
+}
+
+.dark-mode .about-section, 
+.dark-mode .courses-section, 
+.dark-mode .qa-section, 
+.dark-mode .faq-section {
+    background-color: #1e1e1e;  /* Dark section backgrounds */
+}
+
+.dark-mode footer {
+    background-color: #1a1a1a;  /* Dark footer background */
+}
+
+.dark-mode .btn-primary {
+    background-color: #444;  /* Dark button background */
+}
