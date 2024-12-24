@@ -44,7 +44,7 @@ landing-page-project/
 ## Screenshots
 
 ### Light Mode:
-![Light Mode](/screenshots/light-mode.png)
+![Light Mode](Landing_Page/screenshots/dark-mode.PNG)
 
 ### Dark Mode:
 ![Dark Mode](/screenshots/dark-mode.png)
